@@ -41,6 +41,8 @@ console.log(links)
        </ProfilePicDiv>
       <Title>Edson Malagodi</Title>
       <Description>Desenvolvedor Front-End</Description>
+      <Description>Estagiário na empresa Sacola VIP Ltda</Description>
+      <Description>HTML, CSS, JS</Description>
      </Infos>
      {getAllLinks}     
    </Container>

@@ -14,7 +14,7 @@ export const Container = styled.div`
 
 export const Infos = styled.div`
   width: 80%;
-  height: 400px;
+  height: 480px;
   display: flex;
   padding-top: 80px;
   align-items: center;
@@ -33,19 +33,20 @@ export const Title = styled.span`
   color: #000;
   font-weight: 500;
   letter-spacing: .3rem;  
+  margin-bottom: 2rem;
 `;
 
 export const Description = styled.span`
   font-size: 1.2rem;
   color: #000;
-  margin-bottom: 2rem;
+  margin-bottom: .6rem;
 `;
 
 export const Button = styled.button`
   display: flex;
   width: 15rem;
   height: 3rem;
-  margin-bottom: 30px;
+  margin: 1rem 0;
   color: ${({theme}) => theme.color};
   border: 2px solid ${({theme}) => theme.color};
   border-radius: 20px;
