@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Github",
+    "link": "https://github.com/edsonmalagodi",
+    "type": "github",
+    "bg": "#333"
+  },
+  {
+    "content": "Linkedin",
+    "link": "https://www.linkedin.com/in/edsonmalagodi/",
+    "type": "linkedin",
+    "bg": "#0077b5"
+  },
+  {
+    "content": "WhatsApp",
+    "link": "https://api.whatsapp.com/send?phone=5514996456985&text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20voc%C3%AA%20um%20pouco%20melhor",
+    "type": "wts",
+    "bg": "#075e54"
+  },
+  {
+    "content": "Twitter",
+    "link": "https://twitter.com/edson_malagodi",
+    "type": "twitter",
+    "bg": "#1da1f2"
+  }
+]
