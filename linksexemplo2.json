@@ -1,9 +1,8 @@
-[
-  {
-    "content": "Github",
+
+[{
+    "title": "Github",
     "link": "https://github.com/edsonmalagodi",
-    "type": "github",
-    "bg": "#333"
+    "image": "github"    
   },
   {
     "content": "Linkedin",
@@ -15,12 +14,11 @@
     "content": "WhatsApp",
     "link": "https://api.whatsapp.com/send?phone=5514996456985&text=Ol%C3%A1%2C%20vamos%20bater%20um%20papo!%3F",
     "type": "wts",
-    "bg": "#075e54"
+    "bg": "#075e+54"
   },
   {
     "content": "Twitter",
     "link": "https://twitter.com/edson_malagodi",
     "type": "twitter",
     "bg": "#1da1f2"
-  }
-]
+  }]
