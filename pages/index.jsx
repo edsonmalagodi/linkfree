@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 import { Container, Button, Title, Description, Infos, ProfilePicDiv,  } from "./styled"
 
-import links from '../links.json'
+import links from '../linksexemplo2.json'
 import profilePic from '../public/fotoPerfil.jpg'
 
 import { BsWhatsapp, BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
-import { ThemeProvider } from 'styled-components'
+
 
 export default function Home() {
 console.log(links)
