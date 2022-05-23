@@ -5,7 +5,7 @@ import '../../styles/theme'
 
 
 const darkTheme = {
-  bg : '#333',
+  bg : '#121212',
   cardBg: '#C3C3CB',
 
   primaryFont: '#FFF',
@@ -23,11 +23,11 @@ export const ProfileInfoWrapper = styled.div`
   height: 13rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
   background-color: ${theme => darkTheme.bg};
   color: ${theme => darkTheme.primaryFont};
-  margin-top: 4rem;
+  padding-top: 6rem;
 `
 
 export const ProfilePic = styled.div`
@@ -46,6 +46,7 @@ export const ProfileDescription = styled.h1`
 
 export const CardContainer = styled.div`
   display: flex;
+  height: 100vh;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
@@ -53,9 +54,12 @@ export const CardContainer = styled.div`
   background-color: ${theme => darkTheme.bg};
   color: ${theme => darkTheme.font};
   padding-bottom: 2rem;
+  padding-top: 6rem;
 
   @media (min-width: 700px){
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 `
 

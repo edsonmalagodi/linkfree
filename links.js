@@ -18,5 +18,24 @@ export const links = [
         "url" : "www.linkedin.com.br/edosnmalagodi",
         "description": "Meu canal no telegram",
         "type": "telegram"
+    },
+    {
+        "name" : "Twitter",
+        "url" : "www.linkedin.com.br/edosnmalagodi",
+        "description": "Meu canal no telegram",
+        "type": "twitter"
+    },
+    {
+        "name" : "Instagram",
+        "url" : "www.linkedin.com.br/edosnmalagodi",
+        "description": "Meu canal no telegram",
+        "type": "insta"
+    },
+    {
+        "name" : "Youtube",
+        "url" : "www.linkedin.com.br/edosnmalagodi",
+        "description": "Meu canal no telegram",
+        "type": "youtube"
     }
+    
 ]
