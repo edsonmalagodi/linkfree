@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import { darkTheme } from '../styles/theme'
 
 import { 
+  Container,
   CardContainer, 
   LinkCard,
   Title,
@@ -21,6 +22,9 @@ import profile from '../public/fotoPerfil.jpg'
 import github from '../public/GithubBanner.png'
 import linkedin from '../public/LinkedinBanner.png'
 import telegram from '../public/TelegramBanner.png'
+import twitter from '../public/TwitterBanner.png'
+import instagram from '../public/InstagramBanner.png'
+import discord from '../public/DiscordBanner.png'
 
 import {links} from '../links'
 
@@ -33,6 +37,9 @@ const getLinks = links?.map((item, e) => {
         {item.type == 'git' ? <Image src={github} /> : ''}
         {item.type == 'linkedin' ? <Image src={linkedin} /> : ''}
         {item.type == 'telegram' ? <Image src={telegram} /> : ''}
+        {item.type == 'twitter' ? <Image src={twitter} /> : ''}
+        {item.type == 'insta' ? <Image src={instagram} /> : ''}
+        {item.type == 'discord' ? <Image src={discord} /> : ''}
       </ImageWrapper>
 
       <InfoWapper>        
@@ -44,20 +51,24 @@ const getLinks = links?.map((item, e) => {
 })
   return(
     <ThemeProvider theme={darkTheme}>
-      <ProfileInfoWrapper>
+      <Container>
+        <ProfileInfoWrapper>
+          
+          <ProfilePic>
+            <Image src={profile} style={{borderRadius: "100px"}}/>
+          </ProfilePic>
+
+          <ProfileName>EDSON MALAGOLI</ProfileName>
+          <ProfileDescription>Desenvolvedor Front-End</ProfileDescription>
+          <ProfileDescription>HTML, CSS, JS, REACT</ProfileDescription>
+          <ProfileDescription>SÃO PAULO - SP</ProfileDescription>
+
+        </ProfileInfoWrapper>
         
-        <ProfilePic>
-          <Image src={profile} style={{borderRadius: "100px"}}/>
-        </ProfilePic>
-
-        <ProfileName>EDSON MALAGOLI</ProfileName>
-        <ProfileDescription>Desenvolvedor Front-End</ProfileDescription>
-
-      </ProfileInfoWrapper>
-      
-      <CardContainer>                        
-        {getLinks}              
-      </CardContainer>
+        <CardContainer>                        
+          {getLinks}              
+        </CardContainer>
+      </Container>
     </ThemeProvider>
   )
 }

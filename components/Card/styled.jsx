@@ -13,14 +13,19 @@ const darkTheme = {
 
   fontSizeProfDesciption: '.85rem',
   //card content
-  fontSizeTitle: '1rem',
-  fontSizeSubTitle: '.65rem',
+  fontSizeTitle: '1.5rem',
+  fontSizeSubTitle: '.7rem',
   //
 }
 
+export const Container = styled.div`
+  height: 100vh;
+  background-color: ${theme => darkTheme.bg};
+`
+
 export const ProfileInfoWrapper = styled.div`
   width: 100%;
-  height: 13rem;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -37,29 +42,32 @@ export const ProfilePic = styled.div`
 
 export const ProfileName = styled.h1`
   font-size: ${theme => darkTheme.fontSizeTitle};
+  margin-top: 3rem;
 `
 
 export const ProfileDescription = styled.h1`
   font-size: ${theme => darkTheme.fontSizeProfDesciption};
-  font-weight: 300;
+  font-weight: 400;
+  margin-top: .4rem;
 `
 
 export const CardContainer = styled.div`
   display: flex;
-  height: 100vh;
+  height: auto;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
   width: 100%;  
   background-color: ${theme => darkTheme.bg};
-  color: ${theme => darkTheme.font};
-  padding-bottom: 2rem;
-  padding-top: 6rem;
+  color: ${theme => darkTheme.font};  
+  padding-top: 4rem;
 
   @media (min-width: 700px){
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 60%;
   }
 `
 
@@ -72,14 +80,18 @@ export const LinkCard = styled.div`
   flex-direction: column;
   align-items: center;  
   border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
 `
 
 export const ImageWrapper = styled.div`
   display: flex;
+  margin-top: auto;
 `
 
 export const InfoWapper = styled.div`
-  width: 80%;
+  width: 90%;
+  height: auto;
 `
 
 export const Title = styled.h1`

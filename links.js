@@ -9,8 +9,8 @@ export const links = [
     },
     {
         "name" : "Linkedin",
-        "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Meu perfil no Linkedin",
+        "url" : "www.linkedin.com.br/edsonnmalagodi",
+        "description": "Minhas qualificaçõese experiencias",
         "type": "linkedin"
     },
     {
@@ -22,20 +22,20 @@ export const links = [
     {
         "name" : "Twitter",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Meu canal no telegram",
+        "description": "Me segue lá",
         "type": "twitter"
     },
     {
         "name" : "Instagram",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Meu canal no telegram",
+        "description": "Um pouco do meu lifestyle",
         "type": "insta"
-    },
+    },    
     {
-        "name" : "Youtube",
+        "name" : "Discord",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Meu canal no telegram",
-        "type": "youtube"
+        "description": "Tambem estou no Discord, te espero lá!! ",
+        "type": "discord"
     }
     
 ]
