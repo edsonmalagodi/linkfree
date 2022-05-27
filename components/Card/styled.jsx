@@ -19,7 +19,7 @@ const darkTheme = {
 }
 
 export const Container = styled.div`
-  height: 100vh;
+  height: auto;
   background-color: ${theme => darkTheme.bg};
 `
 
@@ -55,7 +55,7 @@ export const CardContainer = styled.div`
   display: flex;
   height: auto;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: column;
   width: 100%;  
   background-color: ${theme => darkTheme.bg};
@@ -86,7 +86,8 @@ export const LinkCard = styled.div`
 
 export const ImageWrapper = styled.div`
   display: flex;
-  margin-top: auto;
+  margin-top: auto;  
+  
 `
 
 export const InfoWapper = styled.div`

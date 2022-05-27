@@ -18,6 +18,8 @@ import {
   ProfileDescription
 } from '../components/Card/styled'
 
+import {Footer} from '../components/Footer'
+
 import profile from '../public/fotoPerfil.jpg'
 import github from '../public/GithubBanner.png'
 import linkedin from '../public/LinkedinBanner.png'
@@ -34,12 +36,12 @@ const getLinks = links?.map((item, e) => {
   return(
     <LinkCard key={e}>       
       <ImageWrapper>
-        {item.type == 'git' ? <Image src={github} /> : ''}
-        {item.type == 'linkedin' ? <Image src={linkedin} /> : ''}
-        {item.type == 'telegram' ? <Image src={telegram} /> : ''}
-        {item.type == 'twitter' ? <Image src={twitter} /> : ''}
-        {item.type == 'insta' ? <Image src={instagram} /> : ''}
-        {item.type == 'discord' ? <Image src={discord} /> : ''}
+        {item.type == 'git' ? <Image src={github} style={{borderRadius: '1rem'}} /> : ''}
+        {item.type == 'linkedin' ? <Image src={linkedin} style={{borderRadius: '1rem'}} /> : ''}
+        {item.type == 'telegram' ? <Image src={telegram} style={{borderRadius: '1rem'}}/> : ''}
+        {item.type == 'twitter' ? <Image src={twitter} style={{borderRadius: '1rem'}}/> : ''}
+        {item.type == 'insta' ? <Image src={instagram} style={{borderRadius: '1rem'}}/> : ''}
+        {item.type == 'discord' ? <Image src={discord} style={{borderRadius: '1rem'}}/> : ''}
       </ImageWrapper>
 
       <InfoWapper>        
@@ -69,6 +71,7 @@ const getLinks = links?.map((item, e) => {
           {getLinks}              
         </CardContainer>
       </Container>
+      <Footer/>
     </ThemeProvider>
   )
 }
