@@ -1,50 +1,82 @@
-import React from 'react'
+
 import Image from 'next/image'
+import Link from 'next/link'
+import { ThemeProvider } from 'styled-components'
 
-import { Container, Button, Title, Description, Infos, ProfilePicDiv,  } from "./styled"
+import { darkTheme } from '../styles/theme'
 
-import links from '../linksexemplo2.json'
-import profilePic from '../public/fotoPerfil.jpg'
+import { 
+  Container,
+  CardContainer, 
+  LinkCard,
+  Title,
+  SubTitle,
+  InfoWapper, 
+  ImageWrapper, 
+  ProfileInfoWrapper, 
+  ProfileName,
+  ProfilePic,
+  ProfileDescription
+} from '../components/Card/styled'
 
-import { BsWhatsapp, BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
+import {Footer} from '../components/Footer'
 
+import profile from '../public/fotoPerfil.jpg'
+import github from '../public/GithubBanner.png'
+import linkedin from '../public/LinkedinBanner.png'
+import telegram from '../public/TelegramBanner.png'
+import twitter from '../public/TwitterBanner.png'
+import instagram from '../public/InstagramBanner.png'
+import discord from '../public/DiscordBanner.png'
 
-export default function Home() {
+import {links} from '../links'
+
+export default function otherIndex(){
 console.log(links)
+const getLinks = links?.map((item, e) => {
+  return(
+    <a href={item.url}  rel="noreferrer" target="_blank">
+    <LinkCard key={e}> 
 
-  const getAllLinks = links?.map((e) => {
-    return(
-      <div>
-        <a href={e.link}>          
-          <Button key={e} style={{color: `${e.bg}`}} >
-            {e.type =='github' ? <BsGithub color='#333' fontSize={20}/> : ''}
-            {e.type =='linkedin' ? <BsLinkedin color='#0077b5' fontSize={20}/>  : ''}
-            {e.type =='wts' ? <BsWhatsapp color='#075e54' fontSize={20}/> : ''}
-            {e.type =='twitter' ? <BsTwitter color='#1da1f2' fontSize={20}/> : ''}
-            {e.content}
-          </Button>          
-        </a>
-      </div>
-    )
-  })
+      <ImageWrapper>
+        
+        {item.type == 'git' ? <Image src={github} style={{borderRadius: '1rem'}} alt="Github" /> : ''}
+        {item.type == 'linkedin' ? <Image src={linkedin} style={{borderRadius: '1rem'}} alt="Linkedin" /> : ''}
+        {item.type == 'telegram' ? <Image src={telegram} style={{borderRadius: '1rem'}} alt="Telegram"/> : ''}
+        {item.type == 'twitter' ? <Image src={twitter} style={{borderRadius: '1rem'}} alt="Twitter"/> : ''}
+        {item.type == 'insta' ? <Image src={instagram} style={{borderRadius: '1rem'}} alt="Instagram"/> : ''}
+        {item.type == 'discord' ? <Image src={discord} style={{borderRadius: '1rem'}} alt="Discord"/> : ''}
+      </ImageWrapper>
 
-  return (
-   <Container>
-     <Infos>  
-       <ProfilePicDiv>
-        <Image
-          style={{borderRadius: '150%'}} 
-          src={profilePic}
-          width={240} 
-          height={240}
-        />
-       </ProfilePicDiv>
-      <Title>Edson Malagodi</Title>
-      <Description>Desenvolvedor Front-End</Description>
-      <Description>Estagiário na empresa Sacola VIP Ltda</Description>
-      <Description>HTML, CSS, JS</Description>
-     </Infos>
-     {getAllLinks}     
-   </Container>
+      <InfoWapper>        
+        <Title>{item.name}</Title>
+        <SubTitle>{item.description}</SubTitle>
+      </InfoWapper>   
+    </LinkCard>
+    </a>
+  )
+})
+  return(
+    <ThemeProvider theme={darkTheme}>
+      <Container>
+        <ProfileInfoWrapper>
+          
+          <ProfilePic>
+            <Image src={profile} style={{borderRadius: "100px"}}/>
+          </ProfilePic>
+
+          <ProfileName>EDSON MALAGOLI</ProfileName>
+          <ProfileDescription>Desenvolvedor Front-End</ProfileDescription>
+          <ProfileDescription>HTML, CSS, JS, REACT</ProfileDescription>
+          <ProfileDescription>SÃO PAULO - SP</ProfileDescription>
+
+        </ProfileInfoWrapper>
+        
+        <CardContainer>                        
+          {getLinks}              
+        </CardContainer>
+      </Container>
+      <Footer/>
+    </ThemeProvider>
   )
 }

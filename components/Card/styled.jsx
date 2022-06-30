@@ -11,9 +11,9 @@ const darkTheme = {
   primaryFont: '#FFF',
   font: '#000',
 
-  fontSizeProfDesciption: '.85rem',
+  fontSizeProfDesciption: '1rem',
   //card content
-  fontSizeTitle: '1.5rem',
+  fontSizeTitle: '1.6rem',
   fontSizeSubTitle: '.7rem',
   //
 }
@@ -36,8 +36,8 @@ export const ProfileInfoWrapper = styled.div`
 `
 
 export const ProfilePic = styled.div`
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
 `
 
 export const ProfileName = styled.h1`
@@ -68,6 +68,9 @@ export const CardContainer = styled.div`
     margin: 0 auto;
     justify-content: space-around;
     width: 60%;
+  }
+  @media (min-width: 1024px){
+    width: 800px;
   }
 `
 

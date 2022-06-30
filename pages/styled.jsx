@@ -39,7 +39,7 @@ export const Title = styled.span`
 export const Description = styled.span`
   font-size: 1.2rem;
   color: #000;
-  margin-bottom: .6rem;
+  margin-bottom: 1rem;
 `;
 
 export const Button = styled.button`

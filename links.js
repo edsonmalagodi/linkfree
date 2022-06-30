@@ -4,13 +4,13 @@ export const links = [
     {
         "name" : "Github",
         "url" : "www.github.com/edsonmalagodi",
-        "description": "Local com todos meus projetos publicos",           
-        "type": "git"  
+        "description": "Hub com todos meus projetos publicos",           
+        "type": "git"
     },
     {
         "name" : "Linkedin",
         "url" : "www.linkedin.com.br/edsonnmalagodi",
-        "description": "Minhas qualificaçõese experiencias",
+        "description": "Minha vida acadêmica, experiencias e cursos",
         "type": "linkedin"
     },
     {
@@ -22,19 +22,19 @@ export const links = [
     {
         "name" : "Twitter",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Me segue lá",
+        "description": "Me segue lá!!",
         "type": "twitter"
     },
     {
         "name" : "Instagram",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Um pouco do meu lifestyle",
+        "description": "Perfil no instagram",
         "type": "insta"
     },    
     {
         "name" : "Discord",
         "url" : "www.linkedin.com.br/edosnmalagodi",
-        "description": "Tambem estou no Discord, te espero lá!! ",
+        "description": "Me chama no Discord",
         "type": "discord"
     }
     
