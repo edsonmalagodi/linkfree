@@ -1,1 +1,3 @@
-## Projeto feito com React, usando framework Nextjs
+## Projeto feito usando Nextjs e Styled-Components
+
+
