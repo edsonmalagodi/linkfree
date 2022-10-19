@@ -61,7 +61,7 @@ const getLinks = links?.map((item, e) => {
         <ProfileInfoWrapper>
           
           <ProfilePic>
-            <Image src={profile} style={{borderRadius: "100px"}}/>
+            <Image src={profile} alt='imagem de perfil' style={{borderRadius: "100px"}}/>
           </ProfilePic>
 
           <ProfileName>EDSON MALAGOLI</ProfileName>

@@ -14,7 +14,7 @@ console.log(links)
 
   const getAllLinks = links?.map((e) => {
     return(
-      <div>
+      <div key={e}>
         <a href={e.link}>          
           <Button key={e} style={{color: `${e.bg}`}} >
             {e.type =='github' ? <BsGithub color='#333' fontSize={20}/> : ''}
