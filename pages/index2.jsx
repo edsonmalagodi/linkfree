@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-import { Container, Button, Title, Description, Infos, ProfilePicDiv,  } from "./styled"
+import { Container, Button, Title, Description, Infos, ProfilePicDiv,  } from "../components/styled"
 
 import links from '../linksexemplo2.json'
 import profilePic from '../public/fotoPerfil.jpg'
