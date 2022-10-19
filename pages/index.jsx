@@ -38,8 +38,7 @@ const getLinks = links?.map((item, e) => {
     <a href={item.url}  rel="noreferrer" target="_blank">
     <LinkCard key={e}> 
 
-      <ImageWrapper>
-        
+      <ImageWrapper>        
         {item.type == 'git' ? <Image src={github} style={{borderRadius: '1rem'}} alt="Github" /> : ''}
         {item.type == 'linkedin' ? <Image src={linkedin} style={{borderRadius: '1rem'}} alt="Linkedin" /> : ''}
         {item.type == 'telegram' ? <Image src={telegram} style={{borderRadius: '1rem'}} alt="Telegram"/> : ''}
