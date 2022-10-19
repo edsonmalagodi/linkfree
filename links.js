@@ -27,7 +27,7 @@ export const links = [
     },
     {
         "name" : "Instagram",
-        "url" : "https://www.linkedin.com.br/edosnmalagodi",
+        "url" : "https://www.instagram.com/edsonmalagodi/",
         "description": "☀️😎",
         "type": "insta"
     }
