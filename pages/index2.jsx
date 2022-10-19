@@ -37,6 +37,7 @@ console.log(links)
           src={profilePic}
           width={240} 
           height={240}
+          alt='algo'
         />
        </ProfilePicDiv>
       <Title>Edson Malagodi</Title>
