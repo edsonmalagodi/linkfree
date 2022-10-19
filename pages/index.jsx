@@ -35,7 +35,7 @@ export default function otherIndex(){
 console.log(links)
 const getLinks = links?.map((item, e) => {
   return(
-    <a href={item.url}  rel="noreferrer" target="_blank">
+    <a href={item.url} key={e} rel="noreferrer" target="_blank">
     <LinkCard key={e}> 
 
       <ImageWrapper>        
